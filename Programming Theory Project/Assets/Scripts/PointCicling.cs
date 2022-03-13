@@ -21,9 +21,9 @@ public class PointCicling :  Ball
     void keepRadius()
     {
         transform.position = new Vector3(
-        Radius* Mathf.Cos(vertical_Angle) * Mathf.Cos(horizontal_Angle) + centerPoint.transform.position.x,
-        Mathf.Sin(vertical_Angle) * Radius + centerPoint.transform.position.y,   // height
-        Radius* Mathf.Cos(vertical_Angle) * Mathf.Sin(horizontal_Angle) + centerPoint.transform.position.z
+        Radius* Mathf.Cos(vertical_Angle) * Mathf.Cos(horizontal_Angle) + centerPoint.transform.position.x,  // INHERITANCE : Radius of Ball class
+        Mathf.Sin(vertical_Angle) * Radius + centerPoint.transform.position.y,   // height       
+        Radius * Mathf.Cos(vertical_Angle) * Mathf.Sin(horizontal_Angle) + centerPoint.transform.position.z
         );
 
     }
@@ -36,8 +36,8 @@ public class PointCicling :  Ball
     }
     void Update()
     {
-        transform.localScale = Scale;
-        gameObject.GetComponent<Renderer>().material.color = Ballcolor;
+        transform.localScale = Scale; // INHERITANCE : Scale of Ball class
+        gameObject.GetComponent<Renderer>().material.color = Ballcolor; // INHERITANCE : Ballcolor of Ball class
         Move();
     }
 }

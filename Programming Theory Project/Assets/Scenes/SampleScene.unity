@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 483165291}
   - component: {fileID: 483165295}
   m_Layer: 0
-  m_Name: decoration2L
+  m_Name: decoration_item1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -312,7 +312,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &483165295
 MonoBehaviour:
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 542170841}
   - component: {fileID: 542170845}
   m_Layer: 0
-  m_Name: decoration2R
+  m_Name: decoration_item4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -422,7 +422,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &542170845
 MonoBehaviour:
@@ -433,7 +433,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 542170840}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76deb80708e54774cb8e5349fdf7ba9d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b03ff2259944854787e79672b9a6f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   IsMovingUp: 0
@@ -723,7 +723,7 @@ GameObject:
   - component: {fileID: 1498692779}
   - component: {fileID: 1498692783}
   m_Layer: 0
-  m_Name: decoration1L
+  m_Name: decoration_item3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -761,7 +761,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8cb62042778f92f4e91a56b9da8e8617, type: 2}
+  - {fileID: 2100000, guid: 9252d7ea581cf764abf7e9f03bb19df5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -803,7 +803,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1498692783
 MonoBehaviour:
@@ -814,7 +814,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1498692778}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc154b1b1a8b061459633644ee631412, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f11ed4f07aa29f4dac1063fcc221ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   IsMovingUp: 0
@@ -977,7 +977,7 @@ GameObject:
   - component: {fileID: 1711173992}
   - component: {fileID: 1711173996}
   m_Layer: 0
-  m_Name: decoration1R
+  m_Name: decoration_item2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1015,7 +1015,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8cb62042778f92f4e91a56b9da8e8617, type: 2}
+  - {fileID: 2100000, guid: 9252d7ea581cf764abf7e9f03bb19df5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1057,7 +1057,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1711173996
 MonoBehaviour:
@@ -1105,8 +1105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ballcolor: {r: 0, g: 0, b: 0, a: 0}
-  IsMovingUp: 0
-  IsMovingDown: 0
 --- !u!23 &1920590588
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1312,7 +1310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball_list_count: 0
-  OkayToSpawning: 1
+  OkayToPlay: 0
 --- !u!54 &2037624308
 Rigidbody:
   m_ObjectHideFlags: 0

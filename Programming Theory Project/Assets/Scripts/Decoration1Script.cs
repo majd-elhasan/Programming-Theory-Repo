@@ -4,25 +4,13 @@ using UnityEngine;
 
 public class Decoration1Script : Decor
 {
-    float angle = 0;
-    float spiningRadius = 0;
     private void Start()
     {
-        spiningRadius = ball.Radius/60;
-    }
-    public override void MoveUpDown(GameObject gameObject_ToMove)
-    {
-        Vector3 OriginPos = Vector3.one;
-        bool inspector = false;
-        if (!inspector) { OriginPos = gameObject_ToMove.transform.position; inspector = true; }
-        base.MoveUpDown(gameObject_ToMove);
-        gameObject_ToMove.transform.position = new Vector3(spiningRadius  * Mathf.Cos(angle) + OriginPos.x,
-        gameObject_ToMove.transform.position.y,
-        spiningRadius  * Mathf.Sin(angle) + OriginPos.z);
+        this.gameObject.GetComponent<Renderer>().material.color = InputData.Instance.decor1;
+        this.gameObject.transform.localScale = Vector3.one* InputData.Instance.Scale_decor1;
     }
     private void Update()
     {
-        angle += Time.deltaTime*12; 
-        MoveUpDown(gameObject);
+        base.MoveUpDown(gameObject);
     }
 }
